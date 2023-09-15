@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 7 - Exploring Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <!-- Inside the main content area, create three columns (one for navigation, one for content, and one for related information or ads). -->
+    <main>
+        <!--COLUMN ONE navbar section -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary  sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Web Development</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar section -->
+
+        <!-- carousel section -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGV2ZWxvcGVyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Have fun coding</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlYiUyMGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p>learn how to debug</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3174&q=80"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p>Learn new skills</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- about -->
+        <div class="bg-body-white text-gray">
+            <div class="row">
+                <h2 class=" col-12 text-center fw-bold">About</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8 p-5">
+                <h3>Learn new skills today.</h3>
+
+                <h3 style="color: rgb(175, 20, 175);">Build your career in tech.</h3>
+                <p>Join our Web Development to transform your career and access new opportunities.</p>
+                <p>We have taught people the skills they need to land their dream job in tech, launch their startup, or
+                    change careers. Through bootcamps in web development, we offer a life-changing learning experience!
+                </p>
+            </div>
+
+            <div class="col-4 pe-5">
+                <img class="img-fluid rounded"
+                    src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2ViJTIwZGV2ZWxvcGVyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                    alt="">
+            </div>
+        </div>
+        <!-- Services -->
+        <div class="bg-body-white text-gray">
+            <div class="row">
+                <h2 class=" col-12 text-center fw-bold">Services</h2>
+            </div>
+
+            <div class="card col-12 text-center">
+                <img class="img-fluid"
+                    src="https://images.unsplash.com/photo-1573165455938-c4ef66c107aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d2ViJTIwZGV2ZWxvcGVyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Web development</h5>
+                    <p class="card-text">Become a Web developer and build websites from database to user interface</p>
+                    <a href="https://www.w3schools.com/whatis/" class="btn btn-dark sticky-bottom">Learn Web development</a>
+                </div>
+
+            </div>
+            <div class="bg-body-white text-gray mt-3">
+                <div class="row">
+                    <h2 class=" col-12 text-center fw-bold">Contact Us</h2>
+                </div>
+            </div>
+        <form class="p">
+            <div class="row m-5">
+                <div class="col-6">
+                    <label for="firstname" class="form-label fw-bold">First name:</label>
+                    <input id="firstname" type="text" placeholder="First name" required>
+                </div>
+                <div class="col-6">
+                    <label for="lastname" class="form-label fw-bold">last name:</label>
+                    <input id="lastname" type="text" placeholder="last name" required>
+                </div>
+            </div>
+
+            <div class="row m-5">
+                <div class="col-12">
+                    <label for="email" class="form-label fw-bold">Email Address:</label>
+                    <input id="email" type="email" placeholder="email@domain.com" required>
+                </div>
+            </div>
+
+            <div class="col-12 text-center">
+    
+                <button class="btn btn-dark">Submit</button>
+        
+            </div>
+    
+    
+            
+
+        </form>
+
+        </div>
+
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
